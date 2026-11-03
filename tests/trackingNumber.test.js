@@ -35,3 +35,8 @@ test('AppError should accept a custom status code', () => {
     assert.equal(error.statusCode, 401);
     assert.equal(error.isOperational, true);
 });
+test('AppError should be an instance of Error', () => {
+    const error = new AppError('Test error');
+
+    assert.ok(error instanceof Error);
+});
