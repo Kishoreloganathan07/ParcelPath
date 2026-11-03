@@ -55,3 +55,21 @@ Staff/admin users can select a registered customer and optionally assign a drive
 | DELETE | `/api/parcels/:id` | Owner cancel or Staff/Admin |
 
 Use `Authorization: Bearer <token>` for authenticated endpoints.
+
+## Version Control and Continuous Integration
+
+ParcelPath uses Git and GitHub for version control and collaboration.
+
+### Branching Strategy
+- `main`: Stable project branch.
+- `feature-24BCS413`: Feature development.
+- `bugfix-24BCS413`: Bug fixes.
+- `documentation-update`: Documentation improvements.
+
+### Merge Conflict Resolution
+A merge conflict was demonstrated by modifying `conflict-demo.txt` in separate feature and bugfix branches. The conflict was manually resolved and committed to the main branch.
+
+### Continuous Integration
+Jenkins is used to automate dependency installation, unit testing, and application build verification.
+
+
